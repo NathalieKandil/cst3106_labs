@@ -1,0 +1,53 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2c3e50; /* Darker shade for the main heading */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2980b9; /* Blue shade for section headings */
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #34495e; /* Dark gray for subheadings */
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: disc; /* Bullet points for lists */
+    margin-left: 20px;
+}
+
+p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777; /* Light gray for footer text */
+}
