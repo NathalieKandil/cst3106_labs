@@ -3,11 +3,25 @@
 
 class YatzyEngine {
     constructor() {
-        // Initialize scoring categories and other game-specific logic
+        this.scores = {
+            ones: 0,
+            twos: 0,
+            threes: 0,
+            fours: 0,
+            fives: 0,
+            sixes: 0,
+            threeOfAKind: 0,
+            fourOfAKind: 0,
+            fullHouse: 0,
+            smallStraight: 0,
+            largeStraight: 0,
+            yatzy: 0,
+            chance: 0
+        };
     }
 
-    calculateScore(diceValues) {
-        // Logic to calculate and return the score based on dice values
+    calculateScore(dice) {
+        // Placeholder for scoring logic based on combinations
     }
 }
 
