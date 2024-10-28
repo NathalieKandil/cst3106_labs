@@ -6,17 +6,24 @@ import YatzyEngine from './YatzyEngine.js';
 
 class YatzyGame {
     constructor() {
-        this.dice = [new Dice(), new Dice(), new Dice(), new Dice(), new Dice()];
-        this.yatzyEngine = new YatzyEngine();
+        this.dice = Array.from({ length: 5 }, () => new Dice());
+        this.engine = new YatzyEngine();
+        this.currentRoll = 0; // Number of rolls in the current turn
     }
 
     rollDice() {
-        // Logic to roll all dice that haven't been kept
+        this.dice.forEach(die => die.roll());
+        this.currentRoll++;
+        // Additional logic to handle the game state
     }
 
-    updateScore() {
-        // Logic to update the game score
+    holdDice(index) {
+        if (this.dice[index]) {
+            this.dice[index].held = true; // Mark the die as held
+        }
     }
+
+    // Other methods to manage game state
 }
 
 export default YatzyGame;
